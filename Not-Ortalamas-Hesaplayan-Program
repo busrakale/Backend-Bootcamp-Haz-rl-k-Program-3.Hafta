@@ -1,0 +1,51 @@
+import java.util.Scanner; 
+  
+ public class Main { 
+    public static void main(String[] args) { 
+        
+        int a,b,c,d,e,f;    
+        
+        Scanner giris= new Scanner(System.in); 
+       
+        System.out.print("Matematik ders notunu giriniz : "); 
+        a = giris.nextInt(); 
+
+        System.out.print("Fizik ders notunu giriniz : "); 
+        b = giris.nextInt(); 
+        
+         System.out.print("Kimya ders notunu giriniz : "); 
+        c = giris.nextInt(); 
+        
+        System.out.print("Türkçe ders notunu giriniz : "); 
+        d = giris.nextInt(); 
+
+        System.out.print("Tarih ders notunu giriniz : "); 
+        e = giris.nextInt(); 
+        
+         System.out.print("Müzik ders notunu giriniz : "); 
+        f = giris.nextInt(); 
+        
+        int toplam=(a+b+c+d+e+f); 
+        double sonuc=toplam/6.0; 
+
+        System.out.println(sonuc); 
+
+        int durum=sonuc>=60?1:0;
+
+        switch(durum){ 
+        case 1:
+            System.out.print(“GEÇTİNİZ”);
+            break; 
+        case 0:
+            System.out.print(“KALDINIZ”);
+        break; 
+            
+        }
+
+       
+    
+        
+    } 
+} 
+
+
