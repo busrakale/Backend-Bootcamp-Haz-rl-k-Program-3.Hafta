@@ -1,0 +1,27 @@
+import java.util.Scanner;
+public class Main {
+    public static void main(String[] args){
+
+        Scanner grs = new Scanner(System.in);
+
+       int a,b,c,Alan,cevre,u;
+
+        System.out.println("1.DİK KENAR UZUNLUĞU NEDİR?");
+        a=grs.nextInt();
+
+        System.out.println("2.DİK KENAR UZUNLUĞU NEDİR?");
+        b=grs.nextInt();
+
+        System.out.println("3.KENAR UZUNLUĞU NEDİR?");
+        c=grs.nextInt();
+
+        u=(a+b+c)/2;
+        cevre=2*u;
+        Alan = (int)Math.sqrt( u*(u-a)*(u-b)*(u-c) );
+
+
+        System.out.println("Üçgenin Çevresi  " + cevre +"'dır.");
+        System.out.println("Üçgenin Alanı " + Alan +"'dır.");
+
+    }
+}
