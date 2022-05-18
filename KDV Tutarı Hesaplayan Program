@@ -1,0 +1,28 @@
+import java.util.Scanner;
+public class Main {
+    public static void main(String[] args){
+
+        Scanner hesap = new Scanner(System.in);
+
+        double Tutar,KdvTutarı,Kdv;
+
+        System.out.println("HESAPLAYACAĞINIZ TUTAR NEDİR?");
+        Tutar = hesap.nextFloat();
+
+        if(Tutar>=0 && Tutar<=1000){
+            
+            Kdv=Tutar*0.18;
+
+        }else{
+            
+              Kdv=Tutar*0.08;     
+        }
+
+    
+        KdvTutarı = Kdv + Tutar;
+        System.out.println("KDV'siz Tutarı " + Tutar +"'dır.");
+        System.out.println("KDV'li Tutarı " + KdvTutarı +"'dır.");
+        System.out.println("KDV Tutarı ise " + Kdv +"'dır.");
+
+    }
+}
