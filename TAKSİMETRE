@@ -1,0 +1,21 @@
+import java.util.Scanner;
+public class Main {
+    public static void main(String[] args){
+
+        Scanner grs = new Scanner(System.in);
+
+       int km_grs,br_grs,hesap;
+
+        System.out.println("KAÇ KM MESAFE KATETTİNİZ?");
+        km_grs=grs.nextInt();
+
+        System.out.println("BR ÜCRET NEDİR?");
+        br_grs=grs.nextInt();
+
+       hesap=km_grs*br_grs;
+
+        System.out.println("ÖDEYECEĞİNİZ TUTAR " +hesap+"TL'DİR.");
+        
+
+    }
+}
